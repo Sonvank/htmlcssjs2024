@@ -1,0 +1,43 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+
+}
+body{
+    background-color: hsl(120deg, 45%, 40%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    font-size: 2rem;
+    
+} 
+p{
+    border-left: 3px  solid red;
+    border-right: 3px  solid red;
+    border-bottom: 3px  dashed purple;
+    border-top: 3px  dotted yellow;
+    font-size: 2rem;
+}
+ h2{ background-color: crimson;
+margin:0px auto;
+width: 50%; 
+text-align: center;
+
+
+ }
+ .box1 {
+    box-sizing: content-box;  
+    width: 300px;
+    height: 100px;
+    padding: 30px;  
+    border: 10px solid blue;
+  }
+  .box2 {
+    box-sizing: border-box;  
+    width: 300px;
+    height: 100px;
+    padding: 30px;  
+    border: 10px solid red;
+  }

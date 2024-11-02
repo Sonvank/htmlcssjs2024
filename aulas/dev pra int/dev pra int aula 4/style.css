@@ -1,0 +1,40 @@
+*{
+    /* margin: 30px; */
+    padding: 10px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: aquamarine;
+}
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:blue;
+}
+p{
+    color:red;
+}
+#tit1{
+    color:yellow;
+}
+#tit2{
+    color:purple;
+}
+.c1{
+    color:green;
+}
+.b1{
+    background-color: white;
+}
+.b2{
+    background-color: black;
+}
+.c2{
+    color:orange;
+}
+h1, h2{
+    margin:10px;
+}
+p:hover{
+    background-color: darkgreen;
+    color:lawngreen;
+}
