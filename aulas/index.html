@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form name="form1" method="post" action="http://hebertphp.awardspace.us/recebe.php">
+        <label for="login">Login</label> <input type="text" id="login" name="login" placeholder="Digite seu login" required><b>*</b><br>
+        <label for="senha">Senha</label> <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><b>*</b><br>
+        Data <input type="datetime-local" id="data" name="data"><br>
+        <input type="hidden" value="FOI" value="JA FOI">
+            <h2>Selecione uma ou mais linguagens</h2>
+           <input type="checkbox" name="js" id="js" checked> <label for="js">JS<br></label> <!-- para a caixa ser clicavel ao clicar no nome é obrigatorio ter um id na string-->
+           <input type="checkbox" name="php" id="php"><label for="php">PHP<br></label> <!-- label serve para ir/marcar quando vc clicar no escrito -->
+           <input type="checkbox" name="sql" id="sql"><label for="sql">SQL<br></label>
+                <h2>Qual o dia da semana da aula de HTML/CSS?</h2>
+                <!--para usar o tipo de marcação que deixe apenas um marcado tera que usar o mesmo name para que nao seja marcado mais de um-->
+                
+                <input type="radio" name="click" value="segunda" id="segunda" required ><label for="segunda">Segunda<br></label>
+                <input type="radio" name="click" value="terça" id="terca"><label for="terca">Terça<br></label>
+                <input type="radio" name="click" value="quarta" id="quarta"><label for="quarta">Quarta<br></label>
+                <input type="radio" name="click" value="quinta" id="quinta"><label for="quinta">Quinta<br></label>
+                <input type="radio" name="click" value="sexta" id="sexta"><label for="sexta">Sexta<br></label>
+
+                Selecione UF <select name="uf">
+                    <option value="RJ">Rio De Janeiro</option>
+                    <option>MG</option>
+                    <option selected>SP</option>
+                    <option>ES</option>
+                </select><br>
+                <h3>Mensagem</h3><textarea name="msg" rows="10" cols="40" placeholder="deixe sua mensage"></textarea><br>
+                <!-- o type radio pra funcionar todos os "name" tem que ser igual -->
+                <!-- é interessante deixar apenas o valor com algum tipo de acentuamento fora ele o id e o name não são interessante.-->
+                <!-- type é o tipo de caixa que ira aparecer sendo texto, checkbox, data -->
+                <!-- name é para mandar o  -->
+                <!-- o campo radio é o unico que nao vale deixar o checked -->
+                <!-- pra deixar o radio como obrigatorio precisa ter em qualquer um pra que seja o comando requiered, mesmo nao sendo marcado o que foi dito obrigatorio  -->
+                <!-- para que seja marcado o campo sendo ele type tera que ser "checked", para o select sera "selected" -->
+                <!-- hoje em dia nao é necessario usar o velue pra usar, pode usar o select normal mesmo -->
+                <!-- textarea é o unico que permite usar quebra de linha -->
+                <!-- rows quando maior o numero mais linhas ele deixa, cols quanto maior mais colunas/caracteres ele aceita -->
+
+                <input type="submit" value="Enviar!"><input type="reset"  value="Limpar Dados!">
+    </form><br>
+    <p><b>*</b> - Campo obrigaório</p>
+</body>
+</html>
